@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E86582C72301CF37000CAF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86582C62301CF37000CAF86 /* AppDelegate.swift */; };
-		E86582C92301CF37000CAF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86582C82301CF37000CAF86 /* ViewController.swift */; };
 		E86582CC2301CF37000CAF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86582CA2301CF37000CAF86 /* Main.storyboard */; };
 		E86582CE2301CF39000CAF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86582CD2301CF39000CAF86 /* Assets.xcassets */; };
 		E86582D12301CF39000CAF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86582CF2301CF39000CAF86 /* LaunchScreen.storyboard */; };
+		E86582DD2301D230000CAF86 /* DrawCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86582DC2301D230000CAF86 /* DrawCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E86582C32301CF37000CAF86 /* DeckOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86582C62301CF37000CAF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E86582C82301CF37000CAF86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E86582CB2301CF37000CAF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E86582CD2301CF39000CAF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E86582D02301CF39000CAF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E86582D22301CF39000CAF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86582DC2301D230000CAF86 /* DrawCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,46 @@
 		E86582C52301CF37000CAF86 /* DeckOfCards */ = {
 			isa = PBXGroup;
 			children = (
-				E86582C62301CF37000CAF86 /* AppDelegate.swift */,
-				E86582C82301CF37000CAF86 /* ViewController.swift */,
 				E86582CA2301CF37000CAF86 /* Main.storyboard */,
+				E86582DB2301D1F4000CAF86 /* Resources */,
+				E86582DA2301D1ED000CAF86 /* ModelViewController */,
+				E86582D92301D1E7000CAF86 /* ModelView */,
+				E86582D82301D1E3000CAF86 /* Model */,
+			);
+			path = DeckOfCards;
+			sourceTree = "<group>";
+		};
+		E86582D82301D1E3000CAF86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E86582D92301D1E7000CAF86 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		E86582DA2301D1ED000CAF86 /* ModelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E86582DC2301D230000CAF86 /* DrawCardViewController.swift */,
+			);
+			path = ModelViewController;
+			sourceTree = "<group>";
+		};
+		E86582DB2301D1F4000CAF86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E86582C62301CF37000CAF86 /* AppDelegate.swift */,
 				E86582CD2301CF39000CAF86 /* Assets.xcassets */,
 				E86582CF2301CF39000CAF86 /* LaunchScreen.storyboard */,
 				E86582D22301CF39000CAF86 /* Info.plist */,
 			);
-			path = DeckOfCards;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86582C92301CF37000CAF86 /* ViewController.swift in Sources */,
+				E86582DD2301D230000CAF86 /* DrawCardViewController.swift in Sources */,
 				E86582C72301CF37000CAF86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
-				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
-				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
